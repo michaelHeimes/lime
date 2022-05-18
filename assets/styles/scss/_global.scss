@@ -3,6 +3,85 @@
 Stylesheet: Global Stylesheet
 
 *************************************************/
+/*********************
+ADMIN STYLES
+*********************/
+
+
+/*********************
+COMMON STYLES
+*********************/
+.has-bg {
+	position: relative;
+	.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+.bg-purple,
+.bg-forest-green,
+.bg-aloha {
+	color: $white;
+	h2,
+	.h2,
+	h3,
+	.h3,
+	h4,
+	.h4,
+	h5,
+	.h5,
+	h6,
+	.h6 {
+		color: $white;
+	}
+}
+.green-text {
+	color: $wintergreen;
+}
+.bg-lime-yellow {
+	color: $lime-yellow;
+}
+
+.bg-purple {
+	background-color: $purple;
+}
+
+.bg-forest-green {
+	background-color: $forest-green;
+}
+
+.bg-aloha {
+	background-color: $aloha;
+	.top-bar,
+	.top-bar ul {
+		background-color: $aloha;
+	}
+}
+
+.bg-lime-yellow {
+	background-color: $lime-yellow;
+}
+
+button,
+.button {
+	border: 0;
+	display: inline-flex;
+	font-weight: bold;
+	span {
+		&:nth-child(1) {
+			padding: .65rem .951rem .85rem;
+		}
+		&:nth-child(2) {
+			width: 44px;
+			height: auto;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
 
 /*********************
 POSTS & CONTENT STYLES
@@ -407,13 +486,6 @@ SIDEBARS & ASIDES
 	ul {
 		margin: 0;
 	}
-}
-/*********************
-FOOTER STYLES
-*********************/
-.footer {
-	clear: both;
-	margin-top: 1em;
 }
 	
 /*********************

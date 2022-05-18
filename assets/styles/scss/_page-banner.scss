@@ -1,0 +1,109 @@
+.page-banner {
+	padding-top: 2.5rem;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		color: $white;
+	}	
+	h1 {
+		margin-bottom: 1.9rem;
+	}
+&.no-gradient-bg {
+	padding-bottom: 1.6rem;
+	h1 {
+		margin-bottom: 0;
+	}
+	.sub-banner-content .inner {
+		padding-top: 1.8rem;
+		@include breakpoint(tablet) {
+			padding-top: 3.2rem;
+		}
+	}
+}
+	.sub-banner-content {
+		.bg {
+			@media screen and (min-width: 1265px) {
+				width: calc(100% + 6vw - 1.125rem);
+			}
+			@include breakpoint(xxlarge) {
+				width: calc(100% + 58px);
+			}
+		}
+		.inner {
+			position: relative;
+			padding: 2.4rem 0 2.65rem 1rem;
+			@include breakpoint(tablet) {
+				padding: 4.4rem 0 4.65rem 1.125rem;
+			}
+		}
+		.left {
+			@include breakpoint(medium down) {
+				margin-bottom: 2.5rem;	
+			}
+		}
+		.right {
+			.img-wrap {
+				padding-bottom: 3.2rem;
+				width: calc(100% + 2.4rem);
+				@media screen and (min-width: 1265px) {
+					width: calc(100% + 6vw);
+				}
+				@include breakpoint(xxlarge) {
+					width: calc(100% + 77px);
+				}
+			}
+		}
+	}
+&.bg-purple {
+	.sub-banner-content {
+		.bg {
+			background: $purple;
+			background: linear-gradient(120deg,rgba(150,125,203,.55),rgba(150,125,203,0) 100%);
+				width: calc(100% + 1.4rem);
+				@media screen and (min-width: 1265px) {
+					width: calc(100% + 6vw - 1.125rem);
+				}
+				@include breakpoint(tablet) {
+					left: 8.33333%;
+				}
+				@include breakpoint(xxlarge) {
+					width: calc(100% + 58px);
+				}
+		}
+	}
+}
+&.bg-forest-green {
+		.sub-banner-content {
+			.bg {
+				background: $forest-green;
+				background: linear-gradient(120deg,rgba(40,96,92,.55),rgba(193,236,75,0) 100%);
+					width: calc(100% + 1.4rem);
+					@media screen and (min-width: 1265px) {
+						width: calc(100% + 6vw - 1.125rem);
+					}
+					@include breakpoint(xxlarge) {
+						width: calc(100% + 58px);
+					}
+			}
+		}
+	}
+&.bg-aloha {
+	.sub-banner-content {
+		.bg {
+			background: $lime-yellow;
+			background: linear-gradient(120deg,rgba(193,236,75,.55),rgba(193,236,75,0) 100%);
+				width: calc(100% + 1.4rem);
+				@media screen and (min-width: 1265px) {
+					width: calc(100% + 6vw - 1.125rem);
+				}
+				@include breakpoint(xxlarge) {
+					width: calc(100% + 58px);
+				}
+		}
+	}
+}
+}

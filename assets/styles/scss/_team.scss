@@ -1,0 +1,39 @@
+.team {
+	padding-top: 6rem;
+	padding-bottom: 8.75rem;
+	.accordion {
+		border-top: 1px solid $forest-green;
+	}
+	.accordion-item {
+		border-bottom: 1px solid $forest-green;
+	}
+	.accordion-title {
+		//padding-right: 5rem;
+		&:before {
+			color: $forest-green !important;
+			line-height: 0;
+			//font-size: 4rem;
+		}
+	}
+	.headings-wrap,
+	.intro-wrap,
+	.entry-content {
+		padding-right: 5rem;
+		margin: auto;
+	}
+	.accordion-content {
+		transition: margin-top .25s ease;
+		&[aria-hidden="false"] {
+			.right {
+				margin-top: -3.75rem;
+			}
+		}
+		.social-wrap .grid-x {
+			margin-left: -.46875rem;
+			margin-right: -.46875rem;
+			> div {
+				padding: .46875rem;
+			}
+		}
+	}
+}

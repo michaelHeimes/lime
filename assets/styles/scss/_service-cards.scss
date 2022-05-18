@@ -1,0 +1,75 @@
+.module.service-cards {
+	.heading-wrap,
+	.copy-rows {
+		width: 76.3%;
+		max-width: 427px;
+		margin: auto;
+	}
+	.heading-wrap {
+		margin-bottom: .2rem;
+	}
+	.copy-rows {
+		padding: 0 1rem;
+	}
+	.single-card {
+		padding-top: 2.75rem;
+		margin-bottom: 3.75rem;
+		.heading-wrap {
+			position: relative;
+			top: -2.75rem;
+			h3 {
+				color: $white;
+				padding: 1.219rem;
+			}
+		}
+		h4 {
+			font-size: rem-calc(29);
+			line-height: 1.1379;
+			margin-bottom: 0.1rem;
+		}
+		h5 {
+			font-weight: 600;
+			line-height: 2.06;
+		}
+	}
+	.inner {
+		height: 100%;
+		.icon-wrap {
+			width: 40px;
+			svg {
+				max-width: 100%;
+			}
+		}
+		.headings-wrap {
+			padding-bottom: 0.25rem;
+		}
+		.copy-wrap {
+			padding-bottom: 3.45rem;
+		}
+	&.theme-purple {
+		background-color: rgba($purple, .12);
+		.heading-wrap {
+			background-color: $purple;
+		}
+	}
+	&.theme-lime-yellow {
+		background-color: rgba($lime-yellow, .12);
+		.heading-wrap {
+			background-color: $lime-yellow;
+		}
+	}
+	&.theme-forest-green {
+		background-color: rgba($forest-green, .12);
+		.heading-wrap {
+			background-color: $forest-green;
+		}
+	}	
+	&.theme-aloha {
+		background-color: rgba($aloha, .12);
+		.heading-wrap {
+			background-color: $aloha;
+		}
+	}	
+	}
+	
+}

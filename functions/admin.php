@@ -4,7 +4,7 @@
 /************* CUSTOMIZE ADMIN *******************/
 // Custom Backend Footer
 function joints_custom_admin_footer() {
-// 	_e('<span id="footer-thankyou">Developed by <a href="https://proprdesign.com/" target="_blank">Propr Design</a></span>.', 'jointswp');
+	_e('<span id="footer-thankyou">Developed by <a href="https://proprdesign.com/" target="_blank">Propr Design</a></span>.', 'jointswp');
 }
 
 // adding it to the admin area
@@ -56,11 +56,29 @@ add_filter('admin_footer_text', 'joints_custom_admin_footer');
 		$style_formats = array(  
 			// Each array child is a format with it's own settings
 	        array(  
-	            'title' => 'Large Blue Text',  
-	            'block' => 'span',  
-	            'classes' => 'large-blue-text',
+	            'title' => 'Highlight',  
+	            'inline' => 'span',  
+	            'classes' => 'highlight',
 	            'wrapper' => true,
 	        ),
+			array(  
+				'title' => 'Footnote',  
+				'inline' => 'sup',  
+				'classes' => 'footnote',
+				'wrapper' => true,
+			),
+			array(  
+				'title' => 'Green Text',  
+				'inline' => 'span',  
+				'classes' => 'green-text',
+				'wrapper' => true,
+			),
+			array(  
+				'title' => 'Small Text',  
+				'inline' => 'span',  
+				'classes' => 'small-text',
+				'wrapper' => true,
+			),
 		);
 		// Insert the array, JSON ENCODED, into 'style_formats'
 		$init_array['style_formats'] = json_encode( $style_formats );  
@@ -68,13 +86,30 @@ add_filter('admin_footer_text', 'joints_custom_admin_footer');
 		return $init_array;  
 	} 
 	add_filter( 'tiny_mce_before_init', 'add_styleselect_classes' ); 
+	
+	function my_acf_admin_head() {
+		?>
+		<style type="text/css">
+	
+			.acf-radio-list span {
+				display: inline-block;
+				width: 14px;
+				height: 14px;
+				transform: translate(2px, 2px);
+			}
+	
+		</style>
+		<?php
+	}
+	
+	add_action('acf/input/admin_head', 'my_acf_admin_head');
 
 
 	// add editor-style.css
-	function theme_editor_style() {
-		add_editor_style( get_template_directory_uri() . '/assets/css/editor-style.css' );
-	}
-	add_action('init', 'theme_editor_style');
+	// function theme_editor_style() {
+	// 	add_editor_style( get_template_directory_uri() . '/assets/css/editor-style.css' );
+	// }
+	// add_action('init', 'theme_editor_style');
 
 
 	// remove revisions meta box and recreate on right side for all post types

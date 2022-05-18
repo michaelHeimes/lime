@@ -1,0 +1,42 @@
+footer.footer {
+	padding-top: 6.15rem;
+	padding-bottom: 2.9rem;
+	.left {
+		padding-bottom: 2rem;
+		.footer-tagline {
+			padding-top: 1.2rem;
+		}
+	}
+	.right {
+		.grid-x {
+			@include breakpoint(large) {
+				justify-content: flex-end;
+			}
+		}
+		h3 {
+			color: $lime-yellow;
+			font-family: $font-acumen;
+			font-weight: 600;
+			font-size: rem-calc(19);
+			margin-bottom: 1.4rem;
+		}
+		a {
+			display: inline-block;
+			font-size: rem-calc(19);
+			color: $white;
+			padding: 0;
+			line-height: 1.39;
+		}
+		ul.menu {
+			padding-bottom: 2rem;
+			li {
+				padding-bottom: 1.25rem;
+			}
+		}
+	}
+	.copyright,
+	.copyright a {
+		font-size: rem-calc(14);
+		color: rgba($lime-yellow, .34);
+	}
+}

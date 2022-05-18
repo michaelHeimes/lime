@@ -1,0 +1,119 @@
+.image-copy,
+ .list-image {
+	padding-top: 5.8rem;
+	padding-bottom: 5.8rem;
+	.left {
+		h3 {
+			margin-bottom: 1.5rem;
+			a {
+				text-decoration: underline;
+			}
+		}
+		.tablepress {
+			margin-top: 2.6rem;
+			margin-bottom: 2.6rem;
+			tbody td,
+			tfoot th {
+				border: 1px solid $lime-yellow !important;
+				padding: 19px 29px;
+				font-size: rem-calc(23);
+				line-height: 1.3;
+				vertical-align: middle;
+			}
+			tbody tr td:first-child {
+				font-size: rem-calc(33);
+				line-height: 1.15;
+				font-weight: bold;
+				color: $lime-yellow;
+				text-align: center;
+			}
+		}
+	}
+	.right {
+		.inner {
+			position: relative;
+			//padding-top: 4rem;
+			max-width: 406px;
+			margin: 2rem auto 0;
+			@include breakpoint(tablet) {
+				margin: 0;
+				padding-right: 3rem;
+			}
+			a {
+				font-weight: bold;
+				font-size: rem-calc(15);
+				color: $forest-green;
+				position: absolute;
+				width: 157px;
+				height: 157px;
+				border-radius: 100%;
+				left: auto;
+				right: 0;
+				padding: 1rem 1.5rem 0rem;
+				span {
+					display: block;
+					padding-bottom: 0.65rem;
+				}
+			&.position-top {
+				top: 0;
+			}
+			&.position-bottom {
+				transform: translateY(0);
+				bottom: 2rem;
+			}
+			}
+		}
+	}
+}
+
+.list-image {
+	padding-top: 3.45rem;
+	padding-bottom: 3.45rem;
+	.left {
+		.list-wrap {
+			padding: 3.25rem;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				z-index: -1;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 7.4375rem;
+			}
+			ul {
+				list-style: none;
+				background-color: $white;
+				padding: 2.5rem 2.6rem 1.5rem;
+				box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.06);
+				li {
+					font-size: rem-calc(16);
+					line-height: 1.4275;
+					padding: 0.85rem 0 1.2rem;
+					&:not(:last-child) {
+						border-width: 0 0 1px 0;
+						border-style: solid;
+					}
+				}
+			}
+		}
+	}
+&.color-theme-amethyst {
+	.list-wrap:before {
+		background-color: $amethyst;
+	}
+	ul li {
+		border-color: $amethyst;
+	}
+}
+&.color-theme-aloha {
+	.list-wrap:before {
+		background-color: $aloha;
+	}
+	ul li {
+		border-color: $aloha;
+	}
+}
+
+}

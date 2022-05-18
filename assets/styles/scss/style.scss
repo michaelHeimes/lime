@@ -7,7 +7,7 @@ all of your Sass files so they can compile into one
 CSS file. 
 
 ******************************************************************/
-
+@import "variables";
 // Import local Foundation overrides - Don't link to Bower version as it will be overwritten whenever updated
 @import "settings";
 
@@ -43,7 +43,7 @@ CSS file.
 // @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
 // @include foundation-dropdown;
-// @include foundation-dropdown-menu;
+@include foundation-dropdown-menu;
 @include foundation-responsive-embed;
 // @include foundation-label;
 // @include foundation-media-object;
@@ -65,5 +65,13 @@ CSS file.
 @include foundation-float-classes;
 
 // Import your custom styles
+@import "typography";
 @import "global";
 @import "header";
+@import "footer";
+@import "page-banner";
+@import "centered-copy";
+@import "service-cards";
+@import "image-copy";
+@import "yellow-gradient-bg";
+@import "team";

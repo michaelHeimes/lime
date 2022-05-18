@@ -29,25 +29,27 @@
 	    <?php } ?>
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+		
+		<link rel="stylesheet" type="text/css" href="//use.typekit.net/hdz7qzq.css">
 
 		<?php wp_head(); ?>
 
 	</head>
 			
 	<body <?php body_class(); ?>>
+			
+	<header class="header bg-<?php the_field('banner_background_color');?>" role="banner">
 				
-		<header class="header" role="banner" data-sticky data-margin-top="0" data-sticky-on="small">
-					
-			 <!-- This navs will be applied to the topbar, above all content 
-				  To see additional nav styles, visit the /parts directory -->
-			 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
-
-		</header> <!-- end .header -->
+		 <!-- This navs will be applied to the topbar, above all content 
+			  To see additional nav styles, visit the /parts directory -->
+		 <?php get_template_part( 'parts/nav', 'offcanvas-topbar' ); ?>
+	
+	</header> <!-- end .header -->
+	
+	
+	<div class="off-canvas-wrapper">
 		
+		<!-- Load off-canvas container. Feel free to remove if not using. -->			
+		<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
 		
-		<div class="off-canvas-wrapper">
-			
-			<!-- Load off-canvas container. Feel free to remove if not using. -->			
-			<?php get_template_part( 'parts/content', 'offcanvas' ); ?>
-			
-			<div class="off-canvas-content" data-off-canvas-content>
+		<div class="off-canvas-content" data-off-canvas-content>

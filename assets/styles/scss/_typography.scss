@@ -1,0 +1,47 @@
+p,
+.p {
+	font-size: rem-calc(23);
+	line-height: 1.39;
+	span.small-text {
+		font-size: rem-calc(16);
+		line-height: 2;
+	}
+}
+h2,
+.h2 {
+	position: relative;
+	line-height: 1.35;
+	span.highlight {
+		display: inline-block;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			width: calc(100% + 8px);
+			left: -4px;
+			height: 16px;
+			top: 60%;
+			transform: translateY(-50%);
+			background-color: $lime-yellow;
+		}
+	}
+}
+h3,
+.h3 {
+	font-family: $font-acumen;
+	font-weight: bold;
+	line-height: 1.187;
+}
+.font-acumen {
+	font-family: $font-acumen;
+}
+.small-caps {
+	font-size: rem-calc(20);
+	line-height: 1.9;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: $font-acumen;
+	margin-bottom: 0.7rem;
+}

@@ -11,22 +11,23 @@ jQuery( document ).ready(function($) {
 	};
 	
 	_app.fixed_nav_hack = function() {
+			
+		$('.off-canvas').on('opened.zf.offCanvas', function() {
+			$('#off-canvas').fadeIn(200);
+			$('header.header').css('postiion', 'fixed');
+		});
 		
-			
-			$('.off-canvas').on('opened.zf.offCanvas', function() {
-				$('header.header').addClass('off-canvas-content is-open-right has-transition-push');			
-			});
-			
-			$('.off-canvas').on('close.zf.offCanvas', function() {
-				$('header.header').removeClass('off-canvas-content is-open-right has-transition-push');
-			});
-			
-			$(window).on('resize', function() {
-				if ($(window).width() > 1023) {
-					$('.off-canvas').foundation('close');
-					$('header.header').removeClass('off-canvas-content has-transition-push');
-				}
-			});
+		$('.off-canvas').on('close.zf.offCanvas', function() {
+			$('#off-canvas').fadeOut(200);
+			$('header.header').css('postiion', 'absolute');
+		});
+		
+		$(window).on('resize', function() {
+			if ($(window).width() > 1023) {
+				$('.off-canvas').foundation('close');
+				$('header.header').removeClass('off-canvas-content has-transition-push');
+			}
+		});
 
 	}
 			
