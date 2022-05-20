@@ -75,7 +75,7 @@ header.header {
 					color: $white;
 				}
 				}
-			&.current_page_item:not(.is-submenu-item) {
+			&.current_page_item:not(.is-submenu-item):not(.contact) {
 				> a {
 					position: relative;
 				&:before {

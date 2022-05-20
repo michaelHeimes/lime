@@ -3,8 +3,9 @@
 	$left_copy = get_sub_field('left_copy');
 	$image = get_sub_field('right_image');
 ?>
-<section class="module yellow-gradient-bg">
-	<div class="grid-container">
+<section class="module yellow-gradient-bg has-bg">
+	<div class="bg"></div>
+	<div class="grid-container relative">
 		<div class="heading grid-x grid-padding-x">
 			<div class="cell small-12 tablet-10 tablet-offset-1 large-7">
 				<?php echo $heading;?>

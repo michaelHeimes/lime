@@ -5,8 +5,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?> role="article" itemscope itemtype="http://schema.org/WebPage">
-	
-	<?php get_template_part('parts/content', 'page-banner');?>
+
+	<?php if(is_front_page()):?>
+		<?php get_template_part('parts/content', 'home-page-banner');?>
+	<?php else:?>
+		<?php get_template_part('parts/content', 'page-banner');?>
+	<?php endif; ?>
     
     <?php if( have_rows('modules') ): ?>
 	<section class="entry-content" itemprop="text">
@@ -14,6 +18,14 @@
 		
 			if( get_row_layout() == 'centered_copy' ):
 				get_template_part('/parts/modules/centered_copy');
+			endif;
+
+			if( get_row_layout() == 'color_cards' ):
+				get_template_part('/parts/modules/color_cards');
+			endif;
+
+			if( get_row_layout() == 'green_bg_headingimage_copy' ):
+				get_template_part('/parts/modules/green_bg_headingimage_copy');
 			endif;
 
 			if( get_row_layout() == 'image_and_copy' ):
@@ -30,6 +42,10 @@
 
 			if( get_row_layout() == 'team' ):
 				get_template_part('/parts/modules/team');
+			endif;
+
+			if( get_row_layout() == 'wysiwyg' ):
+				get_template_part('/parts/modules/wysiwyg');
 			endif;
 
 			if( get_row_layout() == 'yellow_gradient_bg_copy_and_image' ):

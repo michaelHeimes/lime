@@ -38,7 +38,7 @@
 			
 	<body <?php body_class(); ?>>
 			
-	<header class="header bg-<?php the_field('banner_background_color');?>" role="banner">
+	<header class="header<?php if(is_front_page()):?> bg-forest-green<?php endif;?> bg-<?php the_field('banner_background_color');?>" role="banner">
 				
 		 <!-- This navs will be applied to the topbar, above all content 
 			  To see additional nav styles, visit the /parts directory -->

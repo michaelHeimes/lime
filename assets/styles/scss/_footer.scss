@@ -1,6 +1,9 @@
 footer.footer {
-	padding-top: 6.15rem;
+	padding-top: 5rem;
 	padding-bottom: 2.9rem;
+	@include breakpoint(medium) {
+		padding-top: 6.15rem;
+	}
 	.left {
 		padding-bottom: 2rem;
 		.footer-tagline {

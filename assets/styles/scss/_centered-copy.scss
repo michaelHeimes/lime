@@ -1,4 +1,5 @@
-.module.centered-copy {
+.module.centered-copy,
+.module.wysiwyg {
 	padding-top: 5.2rem;
 	padding-bottom: 5.2rem;
 &.rbp {
@@ -6,5 +7,18 @@
 }
 	.link-wrap {
 		padding-top: 1.4rem;
+	}
+	.contact-info {
+		
+		font-size: rem-calc(23);
+		line-height: 1.652;
+		font-weight: 600;
+		font-family: $font-acumen;
+		> div {
+			margin-bottom: 1.125rem;
+		}
+		a {
+			color: $forest-green;
+		}
 	}
 }

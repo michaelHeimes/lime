@@ -1,6 +1,9 @@
 .yellow-gradient-bg {
+	background-color: #f4f4f1;
 	padding-top: 7.15rem;
 	padding-bottom: 8rem;
-	background: $lime-yellow;
-	background: linear-gradient(180deg,rgba($lime-yellow,0),rgba($lime-yellow,0.55) 100%);
+	.bg {
+		background: $lime-yellow;
+		background: linear-gradient(180deg,rgba($lime-yellow,0),rgba($lime-yellow,0.55) 100%);
+	}
 }

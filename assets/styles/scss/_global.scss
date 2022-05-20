@@ -21,10 +21,14 @@ COMMON STYLES
 		bottom: 0;
 	}
 }
+.relative {
+	position: relative;
+}
 .bg-purple,
 .bg-forest-green,
 .bg-aloha {
 	color: $white;
+	a,
 	h2,
 	.h2,
 	h3,
@@ -38,11 +42,34 @@ COMMON STYLES
 		color: $white;
 	}
 }
+.forest-green {
+	color: $forest-green;
+}
 .green-text {
 	color: $wintergreen;
 }
 .bg-lime-yellow {
-	color: $lime-yellow;
+	background-color: $lime-yellow;
+	a,
+	p,
+	.p,
+	h2,
+	.h2,
+	h3,
+	.h3,
+	h4,
+	.h4,
+	h5,
+	.h5,
+	h6,
+	.h6 {
+		color: $forest-green;
+	}
+	svg {
+		path {
+			fill: $forest-green;
+		}
+	}
 }
 
 .bg-purple {
@@ -59,10 +86,6 @@ COMMON STYLES
 	.top-bar ul {
 		background-color: $aloha;
 	}
-}
-
-.bg-lime-yellow {
-	background-color: $lime-yellow;
 }
 
 button,

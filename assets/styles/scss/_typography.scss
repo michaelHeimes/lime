@@ -1,16 +1,25 @@
 p,
 .p {
-	font-size: rem-calc(23);
+	font-size: rem-calc(18);
 	line-height: 1.39;
+	margin-bottom: 1.4em;
+	@include breakpoint(medium) {
+		font-size: rem-calc(23);
+	}
 	span.small-text {
 		font-size: rem-calc(16);
 		line-height: 2;
 	}
 }
+h1,
+.h1 {
+	line-height: 1.02298;
+}
 h2,
 .h2 {
 	position: relative;
 	line-height: 1.35;
+	margin-bottom: 0.73em;
 	span.highlight {
 		display: inline-block;
 		position: relative;

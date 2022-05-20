@@ -41,7 +41,7 @@
             },
             "allow_null": 0,
             "other_choice": 0,
-            "default_value": "",
+            "default_value": "forest-green",
             "layout": "vertical",
             "return_format": "value",
             "save_other_choice": 0
@@ -199,11 +199,9 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content"
-    ],
+    "hide_on_screen": "",
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652831580
+    "modified": 1652976441
 }
