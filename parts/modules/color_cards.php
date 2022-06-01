@@ -2,7 +2,7 @@
 	$heading = get_sub_field('heading');
 	$color_cards = get_sub_field('cards');
 ?>
-<section class="module color-cards">
+<section class="module color-cards bg-light-gray">
 	<div class="grid-container">
 		<?php if($heading):?>
 		<div class="heading-wrap grid-x grid-margin-x text-center">

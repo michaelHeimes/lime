@@ -95,3 +95,28 @@ function joints_get_the_author_posts_link() {
 	);
 	return $link;
 }
+
+// gravity forms input to button
+add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
+function form_submit_button( $button, $form ) {
+	return '<button class="button gform_button arrow-link" id="gform_submit_button_{$form["id"]}"><span>Submit</span>						<span class="bg-lime-yellow grid-x align-middle align-center">
+		<svg id="Component_1" data-name="Component 1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path id="Path_10" data-name="Path 10" d="M10,0,8.182,1.818,15.065,8.7H0v2.6H15.065L8.182,18.182,10,20,20,10Z" fill="#2c4645"/></svg>
+	</span></button>';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

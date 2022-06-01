@@ -4,9 +4,10 @@
 	$add_contact_info = get_sub_field('add_contact_info');
 	$email_address = get_field('email_address', 'option');
 	$address = get_field('address', 'option');
-	$remove_bottom_padding = get_sub_field('remove_bottom_padding');
+	$rtp = get_sub_field('remove_top_padding');
+	$rbp = get_sub_field('remove_bottom_padding');
 ?>
-<section class="module centered-copy<?php if($remove_bottom_padding ):?> rbp<?php endif;?>">
+<section class="module centered-copy<?php if($rtp):?> rtp<?php endif;?><?php if($rbp):?> rbp<?php endif;?>">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x">
 			<div class="cell small-12 tablet-10 tablet-offset-1 large-8 large-offset-2 text-center">
@@ -40,10 +41,10 @@
 				
 				<?php if($add_contact_info):?>
 					<div class="contact-info grid-x grid-padding-x text-center">
-						<div class="cell small-12 tablet-6">
+						<div class="p cell small-12 tablet-6">
 							<a href="mailto:<?php echo $email_address;?>"><?php echo $email_address;?></a>
 						</div>
-						<div class="cell small-12 tablet-6">
+						<div class="p cell small-12 tablet-6">
 							<?php echo $address;?>
 						</div>
 					</div>

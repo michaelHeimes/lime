@@ -1,9 +1,9 @@
 {
-    "key": "group_62815f18774d3",
-    "title": "Page Banners",
+    "key": "group_628fc19dd7d41",
+    "title": "Privacy Policy",
     "fields": [
         {
-            "key": "field_62815f3f72333",
+            "key": "field_628fc19e9d093",
             "label": "Alternative Title",
             "name": "alternative_page_title",
             "type": "text",
@@ -22,7 +22,7 @@
             "maxlength": ""
         },
         {
-            "key": "field_6281604416402",
+            "key": "field_628fc19e9d0ad",
             "label": "Background Color",
             "name": "banner_background_color",
             "type": "radio",
@@ -47,7 +47,7 @@
             "save_other_choice": 0
         },
         {
-            "key": "field_62816b401e5f6",
+            "key": "field_628fc19e9d0c3",
             "label": "Add Sub-banner Content",
             "name": "add_sub-banner_content",
             "type": "true_false",
@@ -66,7 +66,7 @@
             "ui_off_text": ""
         },
         {
-            "key": "field_6284327ee0303",
+            "key": "field_628fc19e9d0d1",
             "label": "Hide Gradient Background",
             "name": "hide_gradient_background",
             "type": "true_false",
@@ -75,7 +75,7 @@
             "conditional_logic": [
                 [
                     {
-                        "field": "field_62816b401e5f6",
+                        "field": "field_628fc19e9d0c3",
                         "operator": "==",
                         "value": "1"
                     }
@@ -93,7 +93,7 @@
             "ui_off_text": ""
         },
         {
-            "key": "field_62816b561e5f7",
+            "key": "field_628fc19e9d0dc",
             "label": "Sub-banner Content",
             "name": "sub-banner_content",
             "type": "group",
@@ -102,7 +102,7 @@
             "conditional_logic": [
                 [
                     {
-                        "field": "field_62816b401e5f6",
+                        "field": "field_628fc19e9d0c3",
                         "operator": "==",
                         "value": "1"
                     }
@@ -116,7 +116,7 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_62816b6d1e5f8",
+                    "key": "field_628fc19ecc3e4",
                     "label": "Left Copy",
                     "name": "left_copy",
                     "type": "wysiwyg",
@@ -135,7 +135,7 @@
                     "delay": 0
                 },
                 {
-                    "key": "field_62816b781e5f9",
+                    "key": "field_628fc19ecc412",
                     "label": "Right Image",
                     "name": "right_image",
                     "type": "image",
@@ -159,7 +159,7 @@
                     "mime_types": ""
                 },
                 {
-                    "key": "field_62816b801e5fa",
+                    "key": "field_628fc19ecc431",
                     "label": "Right Copy",
                     "name": "right_copy",
                     "type": "wysiwyg",
@@ -183,18 +183,8 @@
     "location": [
         [
             {
-                "param": "post_type",
-                "operator": "==",
-                "value": "page"
-            },
-            {
-                "param": "page_type",
-                "operator": "!=",
-                "value": "front_page"
-            },
-            {
                 "param": "page_template",
-                "operator": "!=",
+                "operator": "==",
                 "value": "template-privacy-policy.php"
             }
         ]
@@ -204,11 +194,9 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "the_content"
-    ],
+    "hide_on_screen": "",
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653588462
+    "modified": 1653588486
 }

@@ -24,12 +24,20 @@
 				get_template_part('/parts/modules/color_cards');
 			endif;
 
+			if( get_row_layout() == 'contact_form' ):
+				get_template_part('/parts/modules/contact_form');
+			endif;
+
 			if( get_row_layout() == 'green_bg_headingimage_copy' ):
 				get_template_part('/parts/modules/green_bg_headingimage_copy');
 			endif;
 
 			if( get_row_layout() == 'image_and_copy' ):
 				get_template_part('/parts/modules/image_and_copy');
+			endif;
+
+			if( get_row_layout() == 'limebrary' ):
+				get_template_part('/parts/modules/limebrary');
 			endif;
 
 			if( get_row_layout() == 'list_and_image' ):
@@ -42,6 +50,10 @@
 
 			if( get_row_layout() == 'team' ):
 				get_template_part('/parts/modules/team');
+			endif;
+
+			if( get_row_layout() == 'testimonials' ):
+				get_template_part('/parts/modules/testimonials');
 			endif;
 
 			if( get_row_layout() == 'wysiwyg' ):

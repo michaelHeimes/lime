@@ -1,5 +1,6 @@
 p,
-.p {
+.p,
+td {
 	font-size: rem-calc(18);
 	line-height: 1.39;
 	margin-bottom: 1.4em;
@@ -9,6 +10,12 @@ p,
 	span.small-text {
 		font-size: rem-calc(16);
 		line-height: 2;
+	}
+}
+p.byline {
+	opacity: .56;
+	a {
+		color: $forest-green;
 	}
 }
 h1,

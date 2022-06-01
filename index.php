@@ -72,7 +72,7 @@ get_header(); ?>
 								</svg>
 ', 'textdomain' ),
 								'next_text' => __( '<svg xmlns="http://www.w3.org/2000/svg" width="17.002" height="11.773" viewBox="0 0 17.002 11.773">
-								  <g id="Group_334" data-name="Group 334" transform="translate(-1558.964 -2554.301)>
+								  <g id="Group_334" data-name="Group 334" transform="translate(-1558.964 -2554.301)">
 									<g id="Group_96" data-name="Group 96" transform="translate(1558.964 2554.832)">
 									  <g id="Group_95" data-name="Group 95" transform="translate(0 5.356)">
 										<line id="Line_1088" data-name="Line 1088" x2="15.8" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.5"/>

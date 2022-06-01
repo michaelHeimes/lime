@@ -1,0 +1,45 @@
+.testimonials {
+	padding-top: 4.75rem;
+	padding-bottom: 3.4rem;
+	margin-top: 1rem;
+	margin-bottom: 6.5rem;
+	@include breakpoint(medium) {
+		padding-top: 7.75rem;
+		margin-bottom: 12.5rem;
+	}
+	.bg {
+		left: 27%;
+	}
+	.testimonial-slider {
+		background-color: $white;
+		box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.06);
+		padding: 2rem 1.9rem;
+		@include breakpoint(medium) {
+			padding: 5rem 4.9rem;
+		}
+	}
+	.swiper-slide {
+		.inner {
+			.bottom {
+				div:nth-child(1) {
+					font-size: rem-calc(18);
+					line-height: 1.555;
+				}
+				div:nth-child(2) {
+					opacity: .5;
+				}
+			}
+		}
+	}
+	.swiper-nav {
+		padding-top: 2rem;
+	}
+	.swiper-btn {
+		cursor: pointer;
+		margin: 17px;
+		&.swiper-button-disabled {
+			cursor: default;
+			opacity: .21;
+		}
+	}
+}

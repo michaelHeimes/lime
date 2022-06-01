@@ -11,6 +11,9 @@ ADMIN STYLES
 /*********************
 COMMON STYLES
 *********************/
+article.content-not-found {
+	padding: 7rem 0 10rem;
+}
 .has-bg {
 	position: relative;
 	.bg {
@@ -23,6 +26,9 @@ COMMON STYLES
 }
 .relative {
 	position: relative;
+}
+.bg-light-gray {
+	background-color: $light-gray;
 }
 .bg-purple,
 .bg-forest-green,
@@ -92,7 +98,12 @@ button,
 .button {
 	border: 0;
 	display: inline-flex;
+	align-items: stretch;
 	font-weight: bold;
+	transition: all .25s ease;
+	&:hover {
+		color: $forest-green;
+	}
 	span {
 		&:nth-child(1) {
 			padding: .65rem .951rem .85rem;

@@ -2,15 +2,16 @@
 .module.wysiwyg {
 	padding-top: 5.2rem;
 	padding-bottom: 5.2rem;
+&.rtp {
+	padding-top: 0;
+}
 &.rbp {
 	padding-bottom: 0;
 }
 	.link-wrap {
 		padding-top: 1.4rem;
 	}
-	.contact-info {
-		
-		font-size: rem-calc(23);
+	.contact-info {		
 		line-height: 1.652;
 		font-weight: 600;
 		font-family: $font-acumen;

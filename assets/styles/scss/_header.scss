@@ -49,7 +49,6 @@ header.header {
 			align-items: center;
 			a,
 			a:after {
-				transition: all .25s ease;
 			&:hover {
 				color: $white;
 			}
@@ -95,8 +94,10 @@ header.header {
 					font-size: rem-calc(19);
 					font-weight: 600;
 					padding: .3377rem 1.3837rem .5377rem 1.3837rem;
+					transition: all .25s ease;
 				&:hover {
-					border-color: $white;
+					background-color: $lime-yellow;
+					color: $forest-green;
 				}
 				}	
 			}

@@ -16,7 +16,6 @@
 			tfoot th {
 				border: 1px solid $lime-yellow !important;
 				padding: 19px 29px;
-				font-size: rem-calc(23);
 				line-height: 1.3;
 				vertical-align: middle;
 			}
@@ -50,10 +49,21 @@
 				left: auto;
 				right: 0;
 				padding: 1rem 1.5rem 0rem;
+				transition: all .25s ease;
 				span {
 					display: block;
 					padding-bottom: 0.65rem;
 				}
+				svg path {
+					transition: all .25s ease;
+				}
+			&:hover {
+				background-color: $aloha;
+				color: $white;
+				svg path {
+					fill: $white;
+				}
+			}
 			&.position-top {
 				top: 0;
 			}
@@ -67,22 +77,38 @@
 }
 
 .list-image {
-	padding-top: 3.45rem;
-	padding-bottom: 10.5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 5.5rem;
+	@include breakpoint(medium) {
+		padding-top: 2.75rem;
+		padding-bottom: 10.5rem;
+	}
 	.left {
+		@include breakpoint(medium down) {
+			margin-bottom: 2rem;
+		}
 		.list-wrap {
-			padding: 3.25rem;
 			position: relative;
+			@include breakpoint(tablet) {
+				padding: 3.25rem;
+			}
 			&:before {
 				content: '';
 				position: absolute;
-				z-index: -1;
-				top: 0;
-				left: 0;
-				bottom: 0;
+				z-index: 0;
+				top: -1.125rem;
+				left: -1.125rem;
+				bottom: -1.125rem;
 				right: 7.4375rem;
+				@include breakpoint(tablet) {
+					top: 0;
+					left: 0;
+					bottom: 0;
+				}
 			}
 			ul {
+				position: relative;
+				margin: 0;
 				list-style: none;
 				background-color: $white;
 				padding: 2.5rem 2.6rem 1.5rem;

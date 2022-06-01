@@ -1,0 +1,46 @@
+.limebrary-module {
+	padding-top: 5.9rem;
+	.cat-links {
+		padding-bottom: 3.2rem;
+		a {	
+			display: inline-block;
+			margin: 6px;
+			color: $white;
+			font-size: rem-calc(24);
+			line-height: 1.1875;
+			padding: .61em 1.265em;
+			@include breakpoint(medium) {
+				font-size: rem-calc(28);
+			}
+			@include breakpoint(large) {
+				font-size: rem-calc(32);
+			}
+			&:hover {
+				background-color: $white;
+				color: $forest-green;
+			}
+		}
+	}
+	article.post-archive {
+		border: 0;
+		padding-bottom: 2.3rem;
+		margin-bottom: 4rem;
+		@include breakpoint(medium) {
+			margin-bottom: 7.375rem;
+		}
+		p.byline,
+		h2,
+		.entry-content,
+		.article-footer {
+			padding: 0 4.2rem;
+		}
+		p.byline {
+			margin-top: 3.8rem;
+		}
+		.article-footer {
+			.grid-x {
+				justify-content: end;
+			}
+		}
+	}
+}

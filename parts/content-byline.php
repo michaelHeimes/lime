@@ -2,14 +2,16 @@
 /**
  * The template part for displaying an author byline
  */
+ 	$queried_obj = get_queried_object();
+ 	$queried_id = $queried_obj->cat_ID;
+	$cats = get_the_category_list(', ');
+	$date = get_the_date( 'F j, Y' );
 ?>
 
 <p class="byline">
+	<span class="small-text">
 	<?php
-	printf( __( 'Posted on %1$s by %2$s - %3$s', 'jointswp' ),
-		get_the_time( __('F j, Y', 'jointswp') ),
-		get_the_author_posts_link(),
-		get_the_category_list(', ')
-	);
+		echo $cats . ' | ' . $date;
 	?>
+	</span>
 </p>	
