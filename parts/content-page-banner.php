@@ -12,7 +12,7 @@
 	$queried_obj = get_queried_object();
 	
 ?>
-<header class="article-header page-banner bg-<?php echo $banner_background_color;?><?php if($hide_gradient_background || is_single()):?> no-gradient-bg<?endif;?>">
+<header class="page-banner bg-<?php echo $banner_background_color;?><?php if($hide_gradient_background || is_single() || is_archive()):?> no-gradient-bg<?endif;?>">
 	<div class="bg"></div>
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x">

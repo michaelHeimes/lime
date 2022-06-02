@@ -36,7 +36,7 @@ jQuery( document ).ready(function($) {
 		if( $('body').hasClass('blog') || $('body').hasClass('archive') || $('body').hasClass('single')) {
 			$(window).on('resize load', function(event) {
 				let $headerHeight = $('header.header').height();
-				$('header.article-header.page-banner .bg').css('top', -$headerHeight)				
+				$('header.page-banner .bg').css('top', -$headerHeight)				
 			})
 		}
 		

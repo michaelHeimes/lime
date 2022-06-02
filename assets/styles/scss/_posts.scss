@@ -1,6 +1,10 @@
 article.post {
 	background-color: $white;
+	
+&:not(.single-post) {
 	border-bottom: 1px solid $forest-green;
+}
+
 &.post-archive {
 	padding-bottom: 5rem;
 	p.byline {
