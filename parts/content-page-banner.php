@@ -20,7 +20,7 @@
 				<?php if(is_home() || is_single()):?>
 					<h1 class="page-title">Limebrary</h1>
 				<?php elseif(is_archive()):?>
-					<h1 class="page-title">Category: <br><?php echo $queried_obj->cat_name;?></h1>
+					<h1 class="page-title"><?php echo $queried_obj->cat_name;?></h1>
 				<?php else:?>
 					<?php if($alternative_title):?>
 						<h1 class="page-title"><?php echo $alternative_title; ?></h1>

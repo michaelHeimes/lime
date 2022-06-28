@@ -22,6 +22,27 @@ h1,
 .h1 {
 	line-height: 1.02298;
 }
+
+h1,
+.h1 {
+	span.highlight {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		width: calc(100% + 8px);
+		left: -4px;
+		height: 32px;
+		top: 63%;
+		transform: translateY(-50%);
+			background-color: $lime-green;
+	}
+	}	
+}
+
 h2,
 .h2 {
 	position: relative;
@@ -30,6 +51,7 @@ h2,
 	span.highlight {
 		display: inline-block;
 		position: relative;
+		z-index: 1;
 		&:before {
 			content: '';
 			position: absolute;
@@ -39,7 +61,7 @@ h2,
 			height: 16px;
 			top: 60%;
 			transform: translateY(-50%);
-			background-color: $lime-yellow;
+			background-color: $lime-green;
 		}
 	}
 }

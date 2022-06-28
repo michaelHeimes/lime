@@ -10,7 +10,7 @@
 	<header class="article-header">
 		<a href="<?php the_permalink() ?>">
 			<?php the_post_thumbnail('full'); ?>
-			<h2><?php the_title(); ?></h2>
+			<h2><a class="forest-green grid-x align-middle" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 		</a>
 		<?php get_template_part( 'parts/content', 'byline' ); ?>
 	</header> <!-- end article header -->

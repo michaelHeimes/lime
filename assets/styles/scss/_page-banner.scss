@@ -1,5 +1,13 @@
 .page-banner {
+	min-height: 10rem;
 	padding-top: 2.5rem;
+	@include breakpoint(medium) {
+		min-height: 12rem;
+	}
+	@include breakpoint(large) {
+		min-height: 16.3rem;
+	}
+	
 	h1,
 	h2,
 	h3,
@@ -66,10 +74,10 @@
 			}
 		}
 	}
-&.bg-purple {
+&.bg-violet {
 	.sub-banner-content {
 		.bg {
-			background: $purple;
+			background: $violet;
 			background: linear-gradient(120deg,rgba(150,125,203,.55),rgba(150,125,203,0) 100%);
 		}
 	}
@@ -82,10 +90,10 @@
 			}
 		}
 	}
-&.bg-aloha {
+&.bg-teal {
 	.sub-banner-content {
 		.bg {
-			background: $lime-yellow;
+			background: $lime-green;
 			background: linear-gradient(120deg,rgba(193,236,75,.55),rgba(193,236,75,0) 100%);
 		}
 	}

@@ -14,7 +14,7 @@
 			margin-bottom: 2.6rem;
 			tbody td,
 			tfoot th {
-				border: 1px solid $lime-yellow !important;
+				border: 1px solid $lime-green !important;
 				padding: 19px 29px;
 				line-height: 1.3;
 				vertical-align: middle;
@@ -23,7 +23,7 @@
 				font-size: rem-calc(33);
 				line-height: 1.15;
 				font-weight: bold;
-				color: $lime-yellow;
+				color: $lime-green;
 				text-align: center;
 			}
 		}
@@ -58,7 +58,7 @@
 					transition: all .25s ease;
 				}
 			&:hover {
-				background-color: $aloha;
+				background-color: $teal;
 				color: $white;
 				svg path {
 					fill: $white;
@@ -133,13 +133,28 @@
 		border-color: $amethyst;
 	}
 }
-&.color-theme-aloha {
+&.color-theme-teal {
 	.list-wrap:before {
-		background-color: $aloha;
+		background-color: $teal;
 	}
 	ul li {
-		border-color: $aloha;
+		border-color: $teal;
 	}
 }
-
+&.color-theme-lime-green {
+	.list-wrap:before {
+		background-color: $lime-green;
+	}
+	ul li {
+		border-color: $lime-green;
+	}
+}
+&.color-theme-forest-green {
+	.list-wrap:before {
+		background-color: $forest-green;
+	}
+	ul li {
+		border-color: $forest-green;
+	}
+}
 }

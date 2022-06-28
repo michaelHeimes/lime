@@ -21,11 +21,21 @@
 		padding-right: 5rem;
 		margin: auto;
 	}
+	.entry-content {
+		p {
+			font-size: rem-calc(16);
+			line-height: 2;
+		}
+	}
 	.accordion-content {
-		transition: margin-top .25s ease;
+		.right {
+			transition: margin-top .25s ease;
+		}
 		&[aria-hidden="false"] {
 			.right {
-				margin-top: -3.75rem;
+				@include breakpoint(tablet){
+					margin-top: -3.75rem;
+				}
 			}
 		}
 		.social-wrap .grid-x {

@@ -44,6 +44,10 @@
 				get_template_part('/parts/modules/list_and_image');
 			endif;
 
+			if( get_row_layout() == 'recent_posts' ):
+				get_template_part('/parts/modules/recent_posts');
+			endif;
+
 			if( get_row_layout() == 'service_cards' ):
 				get_template_part('/parts/modules/service_cards');
 			endif;

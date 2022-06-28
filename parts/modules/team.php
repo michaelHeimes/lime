@@ -6,7 +6,7 @@
 				<?php
 				$team_members = get_sub_field('team_members');
 				if( $team_members ): ?>
-					<ul class="accordion" data-accordion>
+					<ul class="accordion" data-accordion data-allow-all-closed="true">
 					<?php $count = 0; foreach( $team_members as $post ): 
 						$count = $count + 1;
 						setup_postdata($post); 
@@ -39,6 +39,7 @@
 							<div class="accordion-content" data-tab-content>
 								<div class="grid-x grid-padding-x">
 									<div class="left cell small-12 tablet-4">
+										<?php if(get_field('add_contact_info')):?>
 										<div class="social-wrap text-center">
 											<div class="small-caps">Connect With Me</div>
 											<div class="grid-x align-center">
@@ -69,6 +70,7 @@
 												<?php endif;?>
 											</div>
 										</div>
+										<?php endif;?>
 									</div>
 									<div class="right cell small-12 tablet-8">
 										<?php if($introquote):?>

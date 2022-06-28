@@ -17,7 +17,7 @@ footer.footer {
 			}
 		}
 		h3 {
-			color: $lime-yellow;
+			color: $lime-green;
 			font-family: $font-acumen;
 			font-weight: 600;
 			font-size: rem-calc(19);
@@ -25,21 +25,40 @@ footer.footer {
 		}
 		a {
 			display: inline-block;
-			font-size: rem-calc(19);
 			color: $white;
 			padding: 0;
-			line-height: 1.39;
+			transition: color .25s ease;
+			svg path {
+				transition: .25s ease;
+			}
+			&:hover {
+				color: $lime-green;	
+				svg path {
+					fill: $lime-green;
+				}
+			}
 		}
-		ul.menu {
+		ul.menu:not(#social-links) {
 			padding-bottom: 2rem;
 			li {
 				padding-bottom: 1.25rem;
+				font-size: rem-calc(19);
+				line-height: 1.39;
 			}
+		}
+	}
+	#social-links {
+		margin: -.5rem -.5rem 0;
+		li {
+			margin: .5rem;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 	.copyright,
 	.copyright a {
 		font-size: rem-calc(14);
-		color: rgba($lime-yellow, .34);
+		color: rgba($lime-green, .34);
 	}
 }

@@ -5,10 +5,47 @@
 	}
 	.single-card {
 		margin-bottom: 4.4rem;
+	&:hover {
 		.inner {
-			height: 100%;
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+		.inner, 
+		.front {
+			border-radius: 0 0 140px 0;
 			overflow: hidden;
-			border-radius: 0 0 30% 0;
+			transition: .3s ease;
+		}
+		.front {
+			.heading-wrap {
+				position: relative;
+				padding: 2.5786rem 1.8rem;
+				h3 {
+					margin: 0;
+					font-size: rem-calc(20);
+					line-height: 1.15;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+					font-weight: 600;
+				}
+				svg {
+					transform: translateY(1.5px) rotate(90deg);
+				}
+			}
+			.bg.img {
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			.bg.mask {
+				opacity: .3;
+			}
+		}
+		.inner {
+			opacity: 0;
+			visibility: hidden;
+			position: relative;
+			height: 100%;
 			padding: 2.7rem 3rem 1.3rem;
 			h3 {
 				font-size: rem-calc(22);
@@ -22,12 +59,32 @@
 			.link-wrap {
 				padding-top: 1rem;
 			}
+			a,
+			svg path {
+				transition: .3s ease;	
+			}
 			a {
 				display: inline-block;
 				svg {
 					margin-left: 1.6rem;
 				}
+			&:hover {
+				color: $lime-green;
+				svg path {
+					fill: $lime-green;
+				}
 			}
+			}
+		&.bg-lime-green {
+			a {
+				&:hover {
+					color: $white;
+					svg path {
+						fill: $white;
+					}
+				}
+			}
+		}
 		}
 	}
 }

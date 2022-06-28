@@ -2,7 +2,7 @@
 	$heading = get_sub_field('heading');
 	$intro_text = get_sub_field('intro_text');
 ?>
-<section class="module limebrary-module bg-lime-yellow">
+<section class="module limebrary-module bg-lime-green">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x">
 			<div class="cell small-12 large-10 large-offset-1">
@@ -16,7 +16,7 @@
 					));
 				?>
 				<?php if($cats):?>
-				<div class="cat-links grid-x text-center">
+				<div class="cat-links grid-x text-center align-center">
 					<?php foreach($cats as $category):
 						$cat_id = $category->cat_ID;
 						$category_link = get_category_link($category->cat_ID);?>

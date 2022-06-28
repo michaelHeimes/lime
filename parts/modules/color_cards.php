@@ -14,7 +14,21 @@
 		<?php if($color_cards):?>
 		<div class="cards-wrap grid-x grid-margin-x">
 			<?php foreach ($color_cards as $color_card):?>
-			<div class="single-card cell small-12 medium-6">
+			<div class="single-card cell small-12 tablet-6 has-bg">
+				<div class="front bg theme-<?php echo $color_card['color_theme'];?> grid-x flex-dir-column align-justify">
+					<div class="bg img" style="background-image: url(<?php echo esc_url($color_card['image']);?>)"></div>
+					<div class="bg mask bg-<?php echo $color_card['color_theme'];?>"></div>
+					<div class="heading-wrap bg-<?php echo $color_card['color_theme'];?> grid-x grid-padding-x align-middle">
+						<div class="cell auto">
+							<h3><?php echo $color_card['card_heading'];?></h3>
+						</div>
+						<div class="cell shrink grid-x align-middle">
+							<svg id="Component_11" data-name="Component 11" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+							  <path id="Path_10" data-name="Path 10" d="M10,0,8.182,1.818,15.065,8.7H0v2.6H15.065L8.182,18.182,10,20,20,10Z" fill="#fff"/>
+							</svg>
+						</div>
+					</div>
+				</div>
 				<div class="inner bg-<?php echo $color_card['color_theme'];?> grid-x flex-dir-column align-justify">
 					<div class="top">
 						<?php 

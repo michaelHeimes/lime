@@ -11,7 +11,7 @@
 	<header class="article-header">
 		<?php the_post_thumbnail('full'); ?>
 		<?php get_template_part( 'parts/content', 'byline' ); ?>
-		<h2><?php the_title(); ?></h2>
+		<h2><a class="forest-green grid-x align-middle" href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 	</header> <!-- end article header -->
 					
 	<section class="entry-content" itemprop="text">

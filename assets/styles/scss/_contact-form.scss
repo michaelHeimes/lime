@@ -2,6 +2,45 @@
 	padding-top: 7.7rem;
 	padding-bottom: 8.9rem;
 	background-color: $light-gray;
+	
+	.gform_wrapper.gravity-theme {
+		.gform_validation_errors,
+		.gfield_validation_message,
+		.validation_message {
+			font-family: $body-font-family;
+			padding: 6px 24px;
+			padding-top: 4px;
+			background: rgba($lime-green,.12);
+			border-color: $lime-green;
+			color: $forest-green;
+		}
+		
+		h2.gform_submission_error.hide_summary {
+			font-family: $body-font-family;
+			color: $forest-green;
+			font-size: rem-calc(24);
+			line-height: 1;
+			padding-left: 30px;
+			
+			.gform-icon {
+				top: 1px;
+				left: 0;
+			}
+			
+		}
+		
+		.gform_validation_errors {
+			padding: 16px 16px 18px;
+		}
+		
+		.gfield_validation_message,
+		.validation_message {
+			position: absolute;
+			transform: translateY(100%);
+		}
+		
+	}
+	
 	.gform_wrapper.gravity-theme {
 		[type=color], [type=date], [type=datetime-local], [type=datetime], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=time], [type=url], [type=week], textarea {
 			box-shadow: 0 0 0;
@@ -50,16 +89,38 @@
 			}
 			&.name {
 				width: 100%;
-				max-width: 52%;
-				margin-right: 48%;
+				@include breakpoint(large) {
+					max-width: 52%;
+					margin-right: 48%;
+				}
 			}
 			&.message {
 				align-items: flex-start;
 				max-width: 100%;
+				flex-direction: column;
+				@include breakpoint(large) {
+					flex-direction: row;
+				}
 				.gfield_label {
-					max-width: 50%;
+					max-width: 100%;
+					margin-bottom: 2rem;
+					@include breakpoint(large) {
+						margin-bottom: 0;
+						max-width: 50%;
+					}
+				}
+				.ginput_container_textarea {
+					width: 100%;
 				}
 			}
+			
+		&.message {
+			.gfield_validation_message,
+			.validation_message {
+				bottom: 0;	
+			}
+		}
+
 		}
 		.gfield:after,
 		.gfield_label {
@@ -82,6 +143,7 @@
 		}
 		.gform_footer {
 			text-align: center;
+			justify-content: center;
 		}
 	}
 }

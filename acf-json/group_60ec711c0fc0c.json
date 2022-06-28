@@ -103,7 +103,7 @@
         },
         {
             "key": "field_60f22cef6a7f4",
-            "label": "Contact And Social",
+            "label": "Contact",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -212,5 +212,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1652641803
+    "modified": 1654731036
 }

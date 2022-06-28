@@ -35,8 +35,9 @@
 						<?php while ( $loop->have_posts() ) : $loop->the_post();
 						
 						$testimonial_text = get_field('testimonial');
-						$title = get_field('authors_title');
+						$authors_name_and_title = get_field('authors_name_and_title');
 						$company = get_field('authors_company');
+						$link_for_author = get_field('link_for_author');
 						
 						?>
 						
@@ -46,7 +47,18 @@
 									<?php echo $testimonial_text;?>
 								</div>
 								<div class="bottom">
-									<div><b><?php the_title(); echo ', ' . $title;?></b></div>
+									<div><b>
+										<?php if($link_for_author):?>
+											<a href="<?php echo esc_url($link_for_author);?>" target="_blank">
+										<?php endif;?>
+										
+										<?php echo $authors_name_and_title;?>
+										
+										<?php if($link_for_author):?>
+											</a>
+										<?php endif;?>
+										
+									</b></div>
 									<div><span class="small-text"><?php echo $company;?></span></div>
 								</div>
 							</div>

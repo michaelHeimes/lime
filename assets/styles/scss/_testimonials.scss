@@ -24,6 +24,12 @@
 				div:nth-child(1) {
 					font-size: rem-calc(18);
 					line-height: 1.555;
+					a {
+						color: $forest-green;
+					&:hover {
+						text-decoration: underline;
+					}
+					}
 				}
 				div:nth-child(2) {
 					opacity: .5;

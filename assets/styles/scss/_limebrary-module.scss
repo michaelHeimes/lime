@@ -1,5 +1,7 @@
 .limebrary-module {
 	padding-top: 5.9rem;
+	background: $lime-green;
+	background: linear-gradient(130deg, rgba(193,236,75,1) 0%, rgba(28,176,150,1) 100%);
 	.cat-links {
 		padding-bottom: 3.2rem;
 		a {	
@@ -23,6 +25,7 @@
 	}
 	article.post-archive {
 		border: 0;
+		border-bottom: 0 !important;
 		padding-bottom: 2.3rem;
 		margin-bottom: 4rem;
 		@include breakpoint(medium) {
@@ -35,7 +38,7 @@
 			padding: 0 4.2rem;
 		}
 		p.byline {
-			margin-top: 3.8rem;
+			padding-top: 3.8rem;
 		}
 		.article-footer {
 			.grid-x {

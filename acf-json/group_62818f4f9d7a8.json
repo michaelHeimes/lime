@@ -194,10 +194,10 @@
                                         "id": ""
                                     },
                                     "choices": {
-                                        "purple": "Purple <span style=\"background-color: #4D24B3;\"><\/span>",
-                                        "lime-yellow": "Lime Yellow <span style=\"background-color: #C1EC4B\"><\/span>",
+                                        "violet": "Violet <span style=\"background-color: #4D24B3;\"><\/span>",
+                                        "lime-green": "Lime Green <span style=\"background-color: #C1EC4B\"><\/span>",
                                         "forest-green": "Forest Green <span style=\"background-color: #2B4644;\"><\/span>",
-                                        "aloha": "Aloha <span style=\"background-color: #1CB096;\"><\/span>"
+                                        "teal": "Teal <span style=\"background-color: #1CB096;\"><\/span>"
                                     },
                                     "allow_null": 0,
                                     "other_choice": 0,
@@ -205,6 +205,49 @@
                                     "layout": "vertical",
                                     "return_format": "value",
                                     "save_other_choice": 0
+                                },
+                                {
+                                    "key": "field_62a20edf18f48",
+                                    "label": "Card Heading",
+                                    "name": "card_heading",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_62a20ee618f49",
+                                    "label": "Image",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "url",
+                                    "preview_size": "medium",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
                                 },
                                 {
                                     "key": "field_6287a823303bd",
@@ -576,9 +619,9 @@
                             },
                             "choices": {
                                 "amethyst": "Amethyst <span style=\"background-color: #957CCA;\"><\/span>",
-                                "neon-yellow": "Neon Yellow <span style=\"background-color: #C1EC4B\"><\/span>",
+                                "lime-green": "Lime Green <span style=\"background-color: #C1EC4B\"><\/span>",
                                 "forest-green": "Forest Green <span style=\"background-color: #2B4644;\"><\/span>",
-                                "aloha": "Aloha <span style=\"background-color: #1CB096;\"><\/span>"
+                                "teal": "Teal <span style=\"background-color: #1CB096;\"><\/span>"
                             },
                             "allow_null": 0,
                             "other_choice": 0,
@@ -706,6 +749,43 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_62b22ac594c07": {
+                    "key": "layout_62b22ac594c07",
+                    "name": "recent_posts",
+                    "label": "Recent Posts",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_62b22acc94c08",
+                            "label": "Posts",
+                            "name": "posts",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "post"
+                            ],
+                            "taxonomy": "",
+                            "filters": [
+                                "search",
+                                "post_type",
+                                "taxonomy"
+                            ],
+                            "elements": "",
+                            "min": 3,
+                            "max": 6,
+                            "return_format": "object"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_6282a18b39469": {
                     "key": "layout_6282a18b39469",
                     "name": "service_cards",
@@ -745,10 +825,10 @@
                                         "id": ""
                                     },
                                     "choices": {
-                                        "purple": "Purple <span style=\"background-color: #4D24B3;\"><\/span>",
-                                        "lime-yellow": "Lime Yellow <span style=\"background-color: #C1EC4B\"><\/span>",
+                                        "violet": "Violet <span style=\"background-color: #4D24B3;\"><\/span>",
+                                        "lime-green": "Lime Green <span style=\"background-color: #C1EC4B\"><\/span>",
                                         "forest-green": "Forest Green <span style=\"background-color: #2B4644;\"><\/span>",
-                                        "aloha": "Aloha <span style=\"background-color: #1CB096;\"><\/span>"
+                                        "teal": "Teal <span style=\"background-color: #1CB096;\"><\/span>"
                                     },
                                     "allow_null": 0,
                                     "other_choice": 0,
@@ -1106,5 +1186,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653581823
+    "modified": 1655844156
 }

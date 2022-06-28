@@ -20,7 +20,7 @@
 										<img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 									<?php endif; ?>
 								</a>
-								<div class="footer-tagline theme-lime-yellow">
+								<div class="footer-tagline theme-lime-green">
 									<p><?php the_field('footer_tagline', 'option');?></p>
 								</div>
 	    					</div>
@@ -37,16 +37,14 @@
 										<h3>Get In Touch</h3>
 										<ul class="menu vertical">
 											<li>
-												<a href="tel<?php the_field('phone_number', 'option');?>">
-													<?php the_field('phone_number', 'option');?>
-												</a>
+												<?php the_field('phone_number', 'option');?>
 											</li>
 											<li>
 												<a href="mailto:<?php the_field('email_address', 'option');?>"">
 													<?php the_field('email_address', 'option');?>
 												</a>
 											</li>
-											<?php the_field('address', 'option');?>
+											<li><?php the_field('address', 'option');?></li>
 										</ul>
 									</div>
 									<div class="cell small-12 medium-shrink large-shrink">

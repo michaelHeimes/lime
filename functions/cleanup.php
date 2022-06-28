@@ -68,7 +68,7 @@ function joints_gallery_style($css) {
 function joints_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-return '<a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __('Read', 'jointswp') . get_the_title($post->ID).'">'. __('... Read more &raquo;', 'jointswp') .'</a>';
+return '...';
 }
 
 //  Stop WordPress from using the sticky class (which conflicts with Foundation), and style WordPress sticky posts using the .wp-sticky class instead
@@ -99,11 +99,10 @@ function joints_get_the_author_posts_link() {
 // gravity forms input to button
 add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
 function form_submit_button( $button, $form ) {
-	return '<button class="button gform_button arrow-link" id="gform_submit_button_{$form["id"]}"><span>Submit</span>						<span class="bg-lime-yellow grid-x align-middle align-center">
-		<svg id="Component_1" data-name="Component 1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path id="Path_10" data-name="Path 10" d="M10,0,8.182,1.818,15.065,8.7H0v2.6H15.065L8.182,18.182,10,20,20,10Z" fill="#2c4645"/></svg>
-	</span></button>';
+	return "<button class='button gform_button arrow-link' id='gform_submit_button_{$form['id']}'><span>Submit</span><span class='bg-lime-green grid-x align-middle align-center'>
+		<svg id='Component_1' data-name='Component 1' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><path id='Path_10' data-name='Path 10' d='M10,0,8.182,1.818,15.065,8.7H0v2.6H15.065L8.182,18.182,10,20,20,10Z' fill='#2c4645'/></svg>
+	</span></button>";
 }
-
 
 
 

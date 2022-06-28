@@ -1,6 +1,11 @@
 article.post {
 	background-color: $white;
 	
+	a,
+	a path {
+		transition: .25s ease;
+	}
+	
 &:not(.single-post) {
 	border-bottom: 1px solid $forest-green;
 }
@@ -8,16 +13,31 @@ article.post {
 &.post-archive {
 	padding-bottom: 5rem;
 	p.byline {
-		margin-top: 2.4rem;
+		padding-top: 2.4rem;
 		margin-bottom: 1.25rem;
 	}
 	.article-header {
 		h2 {
-			margin-bottom: 0;
+			margin-bottom: 0.5rem;
+			line-height: 1.15;
+			a:hover {
+				color: $forest-green;
+				text-decoration: underline;
+			}
 		}
 	}
 	.entry-content {
 		padding-bottom: 0.6rem;
+		h2,
+		.h2,
+		h3,
+		.h3,
+		h4,
+		.h4
+		h5,
+		.h5 {
+			margin-bottom: 1.25rem;
+		}
 	}
 	.article-footer {
 		a {
@@ -27,6 +47,12 @@ article.post {
 			line-height: 1.352;
 			svg {
 				margin-left: 1.45rem;
+			}
+			&:hover {
+				color: $lime-green;
+				path {
+					fill: $lime-green;
+				}
 			}
 		}
 	}
@@ -45,6 +71,10 @@ article.post {
 		margin: 0;
 		@include breakpoint(tablet) {
 			font-size: rem-calc(23);
+		}
+		a:hover {
+			color: $forest-green;
+			text-decoration: underline;
 		}
 	}
 	p.byline {

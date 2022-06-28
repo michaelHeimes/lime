@@ -23,11 +23,11 @@
 						?>
 						<div class="headings-wrap grid-x">
 							<?php if(!empty($icon)):?>
-							<div class="icon-wrap cell shrink">
+							<div class="icon-wrap cell small-12">
 								<img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" />
 							</div>
 							<?php endif;?>
-							<div class="text-wrap cell auto">
+							<div class="text-wrap cell small-12">
 								<h4><?php echo $heading;?></h4>
 								<?php if($sub_heading):?>
 								<h5 class="h6 font-acumen"><?php echo $sub_heading;?></h5>

@@ -22,15 +22,31 @@
             "delay": 0
         },
         {
+            "key": "field_62a204488ab4d",
+            "label": "Link For Author",
+            "name": "link_for_author",
+            "type": "url",
+            "instructions": "Optional",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_628943a7acf17",
-            "label": "Author's Title",
-            "name": "authors_title",
+            "label": "Author's Name and Title",
+            "name": "authors_name_and_title",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -49,7 +65,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -81,5 +97,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1653162947
+    "modified": 1654785208
 }

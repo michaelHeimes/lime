@@ -30,9 +30,9 @@ article.content-not-found {
 .bg-light-gray {
 	background-color: $light-gray;
 }
-.bg-purple,
+.bg-violet,
 .bg-forest-green,
-.bg-aloha {
+.bg-teal {
 	color: $white;
 	a,
 	h2,
@@ -54,8 +54,8 @@ article.content-not-found {
 .green-text {
 	color: $wintergreen;
 }
-.bg-lime-yellow {
-	background-color: $lime-yellow;
+.bg-lime-green {
+	background-color: $lime-green;
 	a,
 	p,
 	.p,
@@ -78,19 +78,19 @@ article.content-not-found {
 	}
 }
 
-.bg-purple {
-	background-color: $purple;
+.bg-violet {
+	background-color: $violet;
 }
 
 .bg-forest-green {
 	background-color: $forest-green;
 }
 
-.bg-aloha {
-	background-color: $aloha;
+.bg-teal {
+	background-color: $teal;
 	.top-bar,
 	.top-bar ul {
-		background-color: $aloha;
+		background-color: $teal;
 	}
 }
 
