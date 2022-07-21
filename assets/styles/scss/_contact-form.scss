@@ -114,6 +114,19 @@
 				}
 			}
 			
+		&.full-width {
+			max-width: 100%;
+		}
+		
+		&.captcha-wrap {
+			.ginput_container {
+				text-align: center;
+				> div {
+					margin: auto;
+				}
+			}
+		}
+			
 		&.message {
 			.gfield_validation_message,
 			.validation_message {

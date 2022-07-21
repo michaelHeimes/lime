@@ -5,7 +5,7 @@
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x">
 			<div class="cell">
-				<h3 class="text-center">Recent LimeLights™</h3>
+				<h3 class="text-center"><?php the_sub_field('heading');?></h3>
 			</div>
 		</div>
 		<div class="grid-x grid-margin-x align-center small-up-1 medium-up-2 tablet-up-3">

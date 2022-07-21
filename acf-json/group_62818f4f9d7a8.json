@@ -756,6 +756,25 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_62d9a6206f778",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_62b22acc94c08",
                             "label": "Posts",
                             "name": "posts",
@@ -1186,5 +1205,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655844156
+    "modified": 1658431019
 }
